@@ -121,17 +121,13 @@ body {
     text-transform: uppercase;
 }
 
-.new-items-list {
-    list-style: none;
-}
-
 .new {
     padding-top: 80px;
     padding-bottom: 120px;
 }
 
 .new .section-title {
-    margin-bottom: 75px;
+    margin-bottom: 74px;
 }
 
 .new-items-list {
@@ -140,13 +136,21 @@ body {
 }
 
 .new-item {
-    float: left;
+    position: relative;
     width: 50%;
     box-sizing: border-box;
     border-left: 1px solid #e5e5e5;
     border-right: 1px solid #e5e5e5;
-    padding-left: 35px;
+    padding-left: 34px;
     padding-right: 25px;
+}
+
+.new-item-left {
+    float: left;
+}
+
+.new-item-right {
+    float: right;
 }
 
 .new-item:last-child {
@@ -160,19 +164,24 @@ body {
     color: #000000;
     text-transform: uppercase;
     margin: 0;
-    padding-bottom: 25px; 
+    margin-bottom: 30px; 
 }
 
 .new-item-short {
+    position: absolute;
+    top: 85px;
+    right: 25px;
     width: 150px;
-    margin-left: auto;
+    z-index: 10;
 }
 
 .new-item-short table {
-    width: 150px;
+    width: 100%;
     border-collapse: collapse;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
 }
+
 
 .new-item-short-description {
     margin: 0;
@@ -184,7 +193,7 @@ body {
 .new-item td {
     text-transform: uppercase;
     font-size: 16px;
-    line-height: 41px;
+    line-height: 40px;
     font-weight: bold;
     color: #000000;
     padding: 0;
@@ -195,10 +204,8 @@ body {
 .new-item img {
     width: 319px;
     height: 459px;
-    z-index: -1;
     position: relative;
-    top: -140px;
-    margin-bottom: -140px;
+    left: 10px
 }
 
 .new-item-long-description {
@@ -207,15 +214,18 @@ body {
 }
 
 .new-item .btn {
-    margin-right: 5px;
+    margin-right: 2px;
 }
 
 .new-item .btn-buy {
-    margin-right: 20px;
+    margin-right: 17px;
 }
 
 .new-item b {
+    font-size: 16px;
+    line-height: 20px;
     text-transform: uppercase;
+    color: #000000;
 }
 
 .btn {
@@ -229,7 +239,7 @@ body {
     text-decoration: none;
     border: 2px solid #834700;
     background-color: #ffffff;
-    padding: 15px 20px;
+    padding: 13px 20px 13px 20px;
     box-sizing: border-box;
 }
 
