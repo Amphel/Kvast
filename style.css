@@ -368,39 +368,53 @@ body {
     margin-bottom: 59px;
 }
 
-.history .subsection-title {
+.history dt {
     display: inline-block;
+    width: 100%;
+    font-family: "Arial", sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0;
 }
 
-.history .history-resource {
+.history .history-term {
     display: inline-block;
     float: right;
-    /* color: #444444; */
-    color: #000000;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: initial;
+    color: #444444;
 }
 
-.history a {
+.history .history-term a {
     color: #834700;
 }
 
-.history a:hover {
+.history .history-term a:hover {
     color: #6a3900;
 }
 
-.history a:active {
+.history .history-term a:active {
     color: #cab7a2;
 }
 
-.history dt {
-    margin-bottom: 25px;
-}
-
 .history dd {
+    position: relative;
     margin: 0;
-    margin-bottom: 65px;
+    margin-bottom: 60px;
 }
 
 .history img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
     display: inline-block;
     float: right;
 }
